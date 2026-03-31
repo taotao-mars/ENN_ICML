@@ -1,10 +1,6 @@
-# EpiPivot: Learning to Control the Simplex Method under Epistemic Uncertainty
-
-Anonymous submission to ICML 2026.
+# Anonymous ICML 2026 Submission
 
 ## Requirements
-
-Python 3.9+ is recommended. Install dependencies via:
 
 ```bash
 pip install --upgrade "jax[cpu]"
@@ -14,15 +10,13 @@ pip install git+https://github.com/deepmind/enn
 
 ## Usage
 
-Run the main experiment:
-
 ```bash
 python epipivot.py
 ```
 
 This will:
 - Generate 100 training and 50 test LP instances
-- Train the EpiPivot model for 180 epochs
+- Train the model for 180 epochs
 - Evaluate against classical baselines (LC, Steepest Edge, Bland)
 - Save results to `epipivot_results.csv`
 
